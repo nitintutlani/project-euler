@@ -3,7 +3,7 @@
 
 var isPrime = require('./common/isPrime');
 
-function firstPrimeDivisor(n) {
+function firstPrimeMultiple(n) {
     for(var i = 2; i <= Math.floor(n / 2); i++) {
         if( n % i === 0 && isPrime(i) ) {
             return i;
@@ -16,7 +16,7 @@ var num = process.argv[2] || 600851475143;
 var first = 1;
 while(true) {
     if( num >= first ) {
-        first = firstPrimeDivisor(num);
+        first = firstPrimeMultiple(num);
         if( first ) {
             num = num / first;
         } else {

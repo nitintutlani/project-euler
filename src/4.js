@@ -27,4 +27,4 @@ while(i >= minI && i >= minJ) { // Both i and j are decreasing, product of value
     i--;
 }
 
-console.log(result);
+console.log('Solution', result);
