@@ -1,6 +1,6 @@
 function isPrime(value) {
     if( value <= 3 ) return true;
-    for(var i = 2; i < Math.sqrt(value / 2); i++) {
+    for(var i = 2; i <= Math.floor(Math.sqrt(value)); i++) {
         if(value % i === 0) {
             return false;
         }

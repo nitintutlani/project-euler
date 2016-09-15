@@ -9,9 +9,9 @@ for(var i = 2; i <= (process.argv[2] || 20); i++) {
 }
 var result = 1;
 while(numbers.length) {
-    console.log(numbers);
+    // console.log(numbers);
     var p = firstPrimeMultiple(numbers[0]);
-    console.log(p);
+    // console.log(p);
     result *= p;
     numbers = numbers.map((item) => {
         return item % p === 0 ? item / p : item;
